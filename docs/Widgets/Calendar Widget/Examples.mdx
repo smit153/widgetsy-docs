@@ -1,0 +1,114 @@
+<!-- import Highlight from "@site/src/components/Calendar /BasicCalendar "; -->
+
+import { Calendar } from "widgetsy";
+
+# Examples
+
+Here are a few examples showcasing the usage of the Calendar Widget in different scenarios:
+
+## Basic Calendar Widget
+
+export const BasicCalendar = () => (
+  <div>
+    <Calendar />
+  </div>
+);
+
+<BasicCalendar></BasicCalendar>
+
+```bash
+import React from 'react';
+import { Calendar  } from 'widgetsy';
+
+function App() {
+  return (
+    <div
+    style={{width:"50%"}}
+    >
+      <Calendar  />
+    </div>
+  );
+}
+
+export default App;
+```
+
+In this example, a basic Calendar Widget is rendered without any customizations. The widget will display the current time using the default styles.
+
+## Customized Calendar Widget
+
+export const CustomizedCalendar = () => (
+  <div>
+    <Calendar
+      backgroundColor={[
+        { color: "#003973", stop: 0 },
+        { color: "#a6a679", stop: 100 },
+      ]}
+      rotation={45}
+      primaryFont="#000000"
+      primaryColor="#FFFFFF"
+    />
+  </div>
+);
+
+<CustomizedCalendar></CustomizedCalendar>
+
+```bash
+import React from 'react';
+import { Calendar  } from 'widgetsy';
+
+function App() {
+  return (
+    <div>
+      <Calendar
+        backgroundColor={[
+          { color: '#003973', stop: 0 },
+          { color: '#a6a679', stop: 100 },
+        ]}
+        rotation={45}
+        primaryFont="#000000"
+        primaryColor="#FFFFFF"
+      />
+    </div>
+  );
+}
+```
+
+In this example, the Calendar Widget is customized with a background gradient, rotation of 45 degrees, white primary font color, and black primary color for UI elements.
+
+## Calendar Widget with Theme
+
+export const ThemeCalendar = () => (
+  <div>
+    <Calendar
+      theme={1}
+      rotation={45}
+      primaryFont="#000000"
+      primaryColor="#FFFFFF"
+    />
+  </div>
+);
+
+<ThemeCalendar></ThemeCalendar>
+
+```bash
+import React from 'react';
+import { Calendar  } from 'widgetsy';
+
+function App() {
+  return (
+    <div>
+      <Calendar
+        theme={1}
+        rotation={45}
+        primaryFont="#000000"
+        primaryColor="#FFFFFF"
+      />
+    </div>
+  );
+}
+```
+
+In this example, the Calendar Widget is customized with a background gradient, rotation of 45 degrees, white primary font color, and black primary color for UI elements.
+
+Feel free to customize the Calendar Widget's props according to your specific requirements and UI design.

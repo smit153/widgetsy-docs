@@ -1,0 +1,104 @@
+<!-- import Highlight from "@site/src/components/Clock/BasicClock"; -->
+
+import { Clock } from "widgetsy";
+
+# Examples
+
+Here are a few examples showcasing the usage of the Clock Widget in different scenarios:
+
+## Basic Clock Widget
+
+export const BasicClock = () => (
+  <div>
+    <Clock />
+  </div>
+);
+
+<BasicClock></BasicClock>
+
+```bash
+import React from 'react';
+import { Clock } from 'widgetsy';
+
+function App() {
+  return (
+    <div>
+      <Clock />
+    </div>
+  );
+}
+
+export default App;
+```
+
+In this example, a basic Clock Widget is rendered without any customizations. The widget will display the current time using the default styles.
+
+## Customized Clock Widget
+
+export const CustomizedClock = () => (
+  <div>
+    <Clock
+      backgroundColor={[
+        { color: "#003973", stop: 0 },
+        { color: "#a6a679", stop: 100 },
+      ]}
+      rotation={45}
+      primaryFont="#000000"
+    />
+  </div>
+);
+
+<CustomizedClock></CustomizedClock>
+
+```bash
+import React from 'react';
+import { Clock } from 'widgetsy';
+
+function App() {
+  return (
+    <div>
+      <Clock
+        backgroundColor={[
+          { color: '#003973', stop: 0 },
+          { color: '#a6a679', stop: 100 },
+        ]}
+        rotation={45}
+        primaryFont="#000000"
+      />
+    </div>
+  );
+}
+```
+
+In this example, the Clock Widget is customized with a background gradient, rotation of 45 degrees, white primary font color, and black primary color for UI elements.
+
+## Clock Widget with Theme
+
+export const ThemeClock = () => (
+  <div>
+    <Clock theme={1} rotation={45} primaryFont="#000000" />
+  </div>
+);
+
+<ThemeClock></ThemeClock>
+
+```bash
+import React from 'react';
+import { Clock } from 'widgetsy';
+
+function App() {
+  return (
+    <div>
+      <Clock
+        theme={1}
+        rotation={45}
+        primaryFont="#000000"
+      />
+    </div>
+  );
+}
+```
+
+In this example, the Clock Widget is customized with a background gradient, rotation of 45 degrees, white primary font color, and black primary color for UI elements.
+
+Feel free to customize the Clock Widget's props according to your specific requirements and UI design.
